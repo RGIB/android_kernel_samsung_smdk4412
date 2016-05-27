@@ -32,7 +32,7 @@ struct melfas_tsi_platform_data {
 	u8	*tsp_ic;
 	int	tsp_tx;
 	int	tsp_rx;
-	int	fw_version;
+	int	fw_bin_ver[3];
 	const u8	*config_fw_version;
 	void	(*input_event)(void *data);
 	void	(*register_cb)(void *);

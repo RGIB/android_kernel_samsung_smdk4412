@@ -21,6 +21,7 @@ enum modem_t {
 	VIA_CBP71,
 	SEC_CMC221,
 	SEC_CMC220,
+	QC_QSC6085,
 };
 
 enum dev_format {
@@ -56,7 +57,7 @@ enum modem_network {
 /* This structure is used in board-tuna-modem.c */
 struct modem_io_t {
 	char *name;
-	int id;
+	u8 id;
 	enum dev_format format;
 	enum modem_io io_type;
 	enum modem_link link;
